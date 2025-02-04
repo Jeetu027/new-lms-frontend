@@ -1,0 +1,94 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed; /* Sidebar stays fixed on the left */
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-logo p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.sidebar-logo-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.sidebar-list {
+  flex-grow: 1;
+}
+
+.sidebar-item {
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.sidebar-item.active {
+  background-color: #f0f0f0;
+}
+
+.sidebar-icon {
+  color: #000;
+}
+
+.sidebar-divider {
+  margin: 20px 0;
+  background-color: #e0e0e0;
+}
+
+  
+  /* .sidebar-upgrade {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-upgrade-text {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-upgrade-subtext {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-upgrade-button {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+  }
+  
+  .sidebar-upgrade-button:hover {
+    background-color: #0056b3;
+  } */
