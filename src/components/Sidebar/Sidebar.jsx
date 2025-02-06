@@ -16,36 +16,36 @@ const Sidebar = () => {
         <p>LMS</p>
       </div>
       <List className="sidebar-list">
-        <ListItem button className="sidebar-item active">
+        <ListItem button="true" className="sidebar-item active">
           <ListItemIcon>
             <DashboardIcon className="sidebar-icon" />
           </ListItemIcon>
           <ListItemText primary="Overview" />
         </ListItem>
-        <ListItem button className="sidebar-item">
+        <ListItem button="true" className="sidebar-item">
           <ListItemIcon>
             <MenuBookIcon className="sidebar-icon" />
           </ListItemIcon>
           <ListItemText primary="Courses" />
         </ListItem>
-        <ListItem button className="sidebar-item">
+        <ListItem button="true" className="sidebar-item">
           <ListItemIcon>
             <PeopleIcon className="sidebar-icon" />
           </ListItemIcon>
           <ListItemText primary="Mentors" />
         </ListItem>
-        <ListItem button className="sidebar-item">
+        <ListItem button="true" className="sidebar-item">
           <ListItemIcon>
             <MessageIcon className="sidebar-icon" />
           </ListItemIcon>
           <ListItemText primary="Message" />
         </ListItem>
-        <ListItem button className="sidebar-item">
-          <ListItemIcon>
-            <SettingsIcon className="sidebar-icon" />
-          </ListItemIcon>
-          <ListItemText primary="Setting" />
-        </ListItem>
+          {/* <ListItem button="true" className="sidebar-item">
+            <ListItemIcon>
+              <SettingsIcon className="sidebar-icon" />
+            </ListItemIcon>
+            <ListItemText primary="Setting" />
+          </ListItem> */}
       </List>
       <Divider className="sidebar-divider" />
       {/* <Box className="sidebar-upgrade">
