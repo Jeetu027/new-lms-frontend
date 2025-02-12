@@ -6,6 +6,7 @@ import Log from "./components/login-pa/log.jsx";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import Dashboard from "./components/DashBoard/Dashboard.jsx";
 import Explore from "./components/Explore-courses/Explore.jsx";
+import Coursevideo from "./components/Coursevideo/Coursevideo.jsx";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/register" element={<Log />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/explore" element={<Explore />} />
+          <Route path="/video" element={<Coursevideo/>} />
         </Routes>
       </div>
     </div>

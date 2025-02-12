@@ -52,6 +52,7 @@ function Dashboard() {
       authorImage: "profile.jpg",
       badge: "Intermediate",
     },
+    
   ];
 
   const chartData = {
@@ -179,10 +180,10 @@ function Dashboard() {
       {/* <div className="current-course-section"> */}
       <div className="course-card">
       <p className="course-date">Today</p>
-      <div className="course-image">
+      {/* <div className="course-image">
         <img src="./image4.png" alt="Course" />
         <span className="badge">Beginner</span>
-      </div>
+      </div> */}
       <h3 className="course-title">UX Design : How To Implement Usability Testing</h3>
       <p className="course-author">Alfredo Rhiel Madsen</p>
       <div className="course-stats">
