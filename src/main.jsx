@@ -19,10 +19,10 @@ function App() {
       {!hideSidebar && <Sidebar />}
       <div style={{ flex: 1 }}>
         <Routes>
+          <Route path="/" element={<Dashboard />} />
           <Route path="/login" element={<Log />} />
           {/* <Route path="/signin" element={<Log />} /> */}
           <Route path="/register" element={<Log />} />
-          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/video" element={<Coursevideo/>} />
         </Routes>

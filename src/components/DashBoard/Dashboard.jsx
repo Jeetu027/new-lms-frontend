@@ -154,7 +154,7 @@ function Dashboard() {
 
         <div className="course-card-list">
           {courses.map((course, index) => (
-            <div className="course-card" key={index}>
+            <div className="course-card-1" key={index}>
               <div className="card-image">
                 <img src={course.image} alt="Course" />
                 <span className="badge">{course.badge}</span>
