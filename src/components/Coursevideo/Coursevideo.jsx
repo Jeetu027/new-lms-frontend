@@ -88,6 +88,15 @@ function Coursevideo() {
     }, 0);
   };
 
+  const modules = [
+    { id: 1, title: "Introduction", duration: "10:00", src: "/1.mp4" },
+    { id: 2, title: "What is UX Design", duration: "10:00", src: "/2.mp4" },
+    { id: 3, title: "Usability Testing", duration: "10:00", src: "/3.mp4" },
+    { id: 4, title: "Create Usability Test", duration: "30:00", src: "/4.mp4" },
+    { id: 5, title: "How to Implement", duration: "30:00", src: "/5.mp4" },
+    { id: 6, title: "How to Implement", duration: "30:00", src: "/5.mp4" },
+  ];
+
   return (
     <div className="videopage">
       <div className="vid-flex">
@@ -185,30 +194,15 @@ function Coursevideo() {
           <div className="course-progress">
             <p className="progress-status">0/5 Done</p>
             <ul className="module-list">
-              <li>
-                <span className="module-index">1</span> Introduction{" "}
-                <span className="module-duration">10:00</span>
-              </li>
-              <li>
-                <span className="module-index">2</span> What is UX Design{" "}
-                <span className="module-duration">10:00</span>
-              </li>
-              <li>
-                <span className="module-index">3</span> Usability Testing{" "}
-                <span className="module-duration">10:00</span>
-              </li>
-              <li>
-                <span className="module-index">4</span> Create Usability Test{" "}
-                <span className="module-duration">30:00</span>
-              </li>
-              <li>
-                <span className="module-index">5</span> How to Implement{" "}
-                <span className="module-duration">30:00</span>
-              </li>
-              <li>
-                <span className="module-index">4</span> Create Usability Test{" "}
-                <span className="module-duration">30:00</span>
-              </li>
+              {modules.map((module, index) => (
+                <li key={module.id} className="module-item">
+                  <button className="module-button">
+                    <span className="module-index">{index + 1}</span>{" "}
+                    {module.title}
+                    <span className="module-duration">{module.duration}</span>
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
           <button className="detail-btn">Go To Detail</button>

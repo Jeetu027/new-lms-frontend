@@ -28,7 +28,7 @@ const Sidebar = () => {
       </div>
       <List className="sidebar-list">
         {/* Overview Button */}
-        <ListItem  className="sidebar-item active">
+        <ListItem className="sidebar-item active" onClick={() => navigate("/")}>
           <ListItemIcon>
             <DashboardIcon className="sidebar-icon" />
           </ListItemIcon>
@@ -37,7 +37,6 @@ const Sidebar = () => {
 
         {/* Courses Button - Navigates to /explore ✅ */}
         <ListItem
-          
           className="sidebar-item"
           onClick={() => navigate("/explore")} // ✅ Navigates to Explore
         >
@@ -48,7 +47,7 @@ const Sidebar = () => {
         </ListItem>
 
         {/* Mentors Button */}
-        <ListItem  className="sidebar-item">
+        <ListItem className="sidebar-item" onClick={() => navigate("/mentors")}>
           <ListItemIcon>
             <PeopleIcon className="sidebar-icon" />
           </ListItemIcon>
@@ -56,7 +55,7 @@ const Sidebar = () => {
         </ListItem>
 
         {/* Message Button */}
-        <ListItem  className="sidebar-item">
+        <ListItem className="sidebar-item">
           <ListItemIcon>
             <MessageIcon className="sidebar-icon" />
           </ListItemIcon>

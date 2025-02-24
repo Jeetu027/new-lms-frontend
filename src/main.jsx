@@ -2,11 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import "./index.css";
-import Log from "./components/login-pa/log.jsx";
+import Log from "./components/login-pa/Log.jsx";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import Dashboard from "./components/DashBoard/Dashboard.jsx";
 import Explore from "./components/Explore-courses/Explore.jsx";
 import Coursevideo from "./components/Coursevideo/Coursevideo.jsx";
+import Mentors from "./components/Mentors/Mentors.jsx";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/register" element={<Log />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/video" element={<Coursevideo/>} />
+          <Route path="/mentors" element={<Mentors/>} />
         </Routes>
       </div>
     </div>
